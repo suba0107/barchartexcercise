@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --height: 150;
+  --saturate: 100;
+}
+.container {
+  display: flex;
+  align-items: flex-end;
+  height: 350px;
+  margin: 1rem;
+}
+.bar {
+  height: calc(var(--height) * 3px);
+  background-color: green;
+  width: 30px;
+  margin: 5px;
+  transition: height 1s ease;
+  filter: saturate(calc(var(--saturate) * 2.5%));
+}
